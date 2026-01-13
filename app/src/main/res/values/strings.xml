@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CodeStream</string>
+    <string name="nav_open">Open navigation</string>
+    <string name="nav_close">Close navigation</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_find">Find Class</string>
+    <string name="menu_wishlist">Wishlist</string>
+    <string name="menu_learn">Learn</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_logout">Logout</string>
+</resources>

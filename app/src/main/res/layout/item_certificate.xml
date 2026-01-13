@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="3dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="#EAEAEA">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgBadge"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:contentDescription="Badge"
+            android:src="@drawable/ic_award_24"
+            android:padding="10dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Corner.Full"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Course Title"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#111111"
+            app:layout_constraintStart_toEndOf="@id/imgBadge"
+            app:layout_constraintTop_toTopOf="@id/imgBadge"
+            app:layout_constraintEnd_toStartOf="@id/imgChevron" />
+
+        <TextView
+            android:id="@+id/tvIssuedAt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:text="Issued: 2026-01-11 14:21:40"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            app:layout_constraintStart_toEndOf="@id/imgBadge"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintEnd_toStartOf="@id/imgChevron" />
+
+        <ImageView
+            android:id="@+id/imgChevron"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_chevron_right_24"
+            android:contentDescription="Open"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
